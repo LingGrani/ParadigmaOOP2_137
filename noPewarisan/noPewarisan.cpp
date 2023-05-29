@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-class baseclass {
+class baseclass final{/*class yang tidak bisa diwariskan*/
 public:
-	virtual void perkenalan() final {
+	virtual void perkenalan() {
 		cout << "Hallo saya function dari base class";
 	}
 };
 
-class derivedClass :public baseclass {
+class derivedclass :public baseclass {
 public:
 	void perkenalan() {
 		cout << "Hallo saya function dari derived Class";
@@ -16,7 +16,7 @@ public:
 };
 
 int main() {
-	derivedClass a;
+	derivedclass a;
 	a.perkenalan();
 
 	return 0;
