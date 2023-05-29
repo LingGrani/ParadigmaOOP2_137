@@ -13,14 +13,14 @@ public:
 class pekerja :public Orang {
 public:
     pekerja(int pUmur) :Orang(pUmur) {
-        cout << "Orang dibuat\n" << endl;
+        cout << "Pekerja dibuat\n" << endl;
     }
 };
 
 class pelajar :public Orang {
 public:
     pelajar(int pUmur) :Orang(pUmur) {
-        cout << "Orang dibuat\n" << endl;
+        cout << "Pelajar dibuat\n" << endl;
     }
 };
 
