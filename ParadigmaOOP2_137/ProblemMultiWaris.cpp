@@ -13,6 +13,20 @@ public:
 class pekerja :public Orang {
 public:
     pekerja(int pUmur) :Orang(pUmur) {
-        cout << "Orang dibuuat\n" << endl;
+        cout << "Orang dibuat\n" << endl;
+    }
+};
+
+class pelajar :public Orang {
+public:
+    pelajar(int pUmur) :Orang(pUmur) {
+        cout << "Orang dibuat\n" << endl;
+    }
+};
+
+class budi :public pekerja, public pelajar {
+public:
+    budi(int pUmur) :pekerja(pUmur),pelajar(pUmur) {
+        cout << "Budi dibuat\n" << endl;
     }
 };
